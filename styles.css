@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.cafe {
+    background: url('https://www.w3schools.com/w3images/onepage_restaurant.jpg')center / cover no-repeat;
+    min-height: 100%;
+}
+
+.p1,
+.p2,
+.p3 {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px;
+}
+
+.p1 {
+    font-size: 24px;
+    margin-bottom: 80px;
+}
+
+.p2 {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.p3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.p4 {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    left: 50%;
+    font-size: 100px;
+    font-family: 'Akronim', cursive;
+    transform: translate(-50%, -50%);
+}
+
+.menu,
+.contact {
+    text-decoration: none;
+    color: #fff;
+    padding: 24px 20px;
+    display: inline-block;
+}
+
+.menu:hover,
+.contact:hover {
+    background: rgba(255, 255, 255, 0.226);
+}
+
+
+/* The Modal (background) */
+
+.w3-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+
+.w3-modal-content {
+    background-color: #fefefe;
+    margin: 5px auto;
+    /* 15% from the top and centered */
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.w3-button {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Close button on hover */
+
+.w3-button:hover,
+.w3-button:focus {
+    color: rgb(145, 145, 145);
+    cursor: pointer;
+}
+
+h1 {
+    background: #000000;
+    color: #fff;
+    padding: 12px 16px;
+}
+
+h5 {
+    padding: 8px 16px;
+}
+
+.btn {
+    margin: 20px 0;
+    padding: 12px 20px;
+}
+
+
+/*contact form */
+
+.w3-input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding: 24px 8px;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .w3-modal-content {
+        width: 100%;
+    }
+}
